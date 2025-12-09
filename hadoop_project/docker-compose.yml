@@ -1,0 +1,9 @@
+services:
+  hadoop-master:
+    image: bde2020/hadoop-master:2.0.0-hadoop3.2.1-java8
+    container_name: hadoop-master
+    volumes:
+      - "C:/Users/jikam/Documents/hadoop_project:/hadoop_project"
+    ports:
+      - "9870:9870"
+      - "8088:8088"
